@@ -15,7 +15,7 @@ def discover_service_instance(service_name):
     client = boto3.client('servicediscovery')
     try:
         # Replace with your Cloud Map namespace
-        namespace_name = 'pre-prod-eloelo'
+        namespace_name = 'pre-prod-namspace-name'
 
         # Discover instances of the ECS service
         response = client.discover_instances(
